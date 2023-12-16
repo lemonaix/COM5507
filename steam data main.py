@@ -206,7 +206,7 @@ def get_data_from_gamalytic(session, game_id):
 conn = sqlite3.connect('steam_data.db')
 
 def main():
-    excel_file = r'C:\Users\A\Desktop\steam python\test.xlsx'
+    excel_file = r'C:\Users\A\Desktop\steam python\game_id.xlsx'
     column_name = 'game_id'
 
     try:
