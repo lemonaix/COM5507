@@ -19,5 +19,5 @@ appid_values = [tag['data-appid'] for tag in appid_tags]
 appid_df = pd.DataFrame({'data-appid': appid_values})
 
 # 将DataFrame保存为Excel文件
-output_excel_path = 'C:\\Users\\A\\Desktop\\output_appid_data.xlsx'  
+output_excel_path = 'C:\\Users\\A\\Desktop\\game_id.xlsx'  
 appid_df.to_excel(output_excel_path, index=False)
