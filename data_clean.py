@@ -23,7 +23,7 @@ def convert_to_number(value):
     return value
 
 # 读取Excel文件
-df = pd.read_excel('C:\\Users\\A\\Desktop\\steam python\\output_appid_data.xlsx')
+df = pd.read_excel('C:\\Users\\A\\Desktop\\steam python\\game_id.xlsx')
 
 # 要清洗的列
 columns_to_clean = ['positive_review_percentage', 'Revenue Amount', 'Players Total', 'Average Playtime', 'Average Daily Concurrent Players', 'Followers','Owners']
@@ -86,5 +86,5 @@ df = df.dropna(subset=['game_name'])
 df = df[df['month'] != 12]
 
 # 保存清洗后的数据到新的Excel文件
-df.to_excel('C:\\Users\\A\\Desktop\\steam python\\data_clean_2.xlsx', index=False)
+df.to_excel('C:\\Users\\A\\Desktop\\steam python\\data_clean.xlsx', index=False)
 
