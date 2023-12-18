@@ -16,7 +16,7 @@ appid_tags = soup.find_all('tr', class_='app', attrs={'data-appid': True})
 appid_values = [tag['data-appid'] for tag in appid_tags]
 
 # 创建一个DataFrame
-appid_df = pd.DataFrame({'data-appid': appid_values})
+appid_df = pd.DataFrame({'game_id': appid_values})
 
 # 将DataFrame保存为Excel文件
 output_excel_path = 'C:\\Users\\A\\Desktop\\game_id.xlsx'  
